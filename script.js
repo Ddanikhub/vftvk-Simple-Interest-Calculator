@@ -19,15 +19,15 @@ function computeinterest()
     }
     else{
     document.getElementById("deposit").innerHTML = 
-    "If you deposit " + '<span style="font-weight: bold">' + "$" +principal + '</span>' + ",";
+    "If you deposit " + '<span style="font-weight: bold; background-color: yellow">' + "$" +principal + '</span>' + ",";
     
     document.getElementById("inerestrate").innerHTML = 
     "at an interest rate of " + '<span style="font-weight: bold; background-color: yellow">' + rate + "%" +'</span>' + ".";
     
     document.getElementById("Amoutof").innerHTML = 
-    "You will recieve an amount of " + '<span style="font-weight: bold">' + "$" + interest + '</span>' + ",";
+    "You will recieve an amount of " + '<span style="font-weight: bold; background-color: yellow">' + "$" + interest + '</span>' + ",";
     
-    document.getElementById("inyear").innerHTML = "in the year of " + '<span style="font-weight: bold">' + year + '</span>' + ".";}
+    document.getElementById("inyear").innerHTML = "in the year of " + '<span style="font-weight: bold; background-color: yellow">' + year + '</span>' + ".";}
     }
     
 
