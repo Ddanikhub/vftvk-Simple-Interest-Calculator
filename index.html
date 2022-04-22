@@ -1,16 +1,49 @@
+<!DOCTYPE html>
+
+<title>Simple Interest Calculator</title>
+
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <body> <!-- Body is styled in div class "maindiv" at syle.css-->
+        <div class="maindiv"> 
+            <h1>Simple Interest Calculator</h1> <!--H1 style is in syle.css-->
+             
+         
+            Amount <input type="number"  id="principal">  <br><br> <!-- About in numbers positive numbers only -->
+            Rate <input type="range" min="1" max="20" step=".25" value="10.25" id="rate" onchange="updateSlider(this.value)"> <span id="rate_val">
+                10.25</span>%<br/><br> <!-- Rate as a slider between 1 and 20 -->
+            No. of Years <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br><!-- Years as in form -->
+        
+            <button onclick="computeinterest()">Compute Interest</button><br> <!-- Formula to compute inerest is in script.js file -->
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            <!-- ------------- Computation output ------------------ -->
+            <p id="deposit"></p>
+            <p id="inerestrate"></p>
+            <p id="Amoutof"></p>
+            <p id="inyear"></p>
 
-        <button onclick="compute()">Compute</button>
+            
+        
+        </div>
     </body>
+    <footer>
+<br>
+        &#169; This Calculator belongs to Daniel Dorohov
+
+
+</footer>
 </html>
