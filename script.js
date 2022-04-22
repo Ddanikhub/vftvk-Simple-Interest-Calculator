@@ -22,7 +22,7 @@ function computeinterest()
     "If you deposit " + '<span style="font-weight: bold">' + "$" +principal + '</span>' + ",";
     
     document.getElementById("inerestrate").innerHTML = 
-    "at an interest rate of " + '<span style="font-weight: bold">' + rate + "%" +'</span>' + ".";
+    "at an interest rate of " + '<span style="font-weight: bold; background-color: yellow">' + rate + "%" +'</span>' + ".";
     
     document.getElementById("Amoutof").innerHTML = 
     "You will recieve an amount of " + '<span style="font-weight: bold">' + "$" + interest + '</span>' + ",";
